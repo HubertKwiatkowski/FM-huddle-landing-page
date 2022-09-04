@@ -26,10 +26,10 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://fm-huddle-landing-page-delta.vercel.app/)
+- Solution URL: [solution](https://github.com/HubertKwiatkowski/FM-huddle-landing-page)
+- Live Site URL: [live](https://fm-huddle-landing-page-delta.vercel.app/)
 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/HubertKwiatkowski)
+- Frontend Mentor - [HubertKwiatkowski](https://www.frontendmentor.io/profile/HubertKwiatkowski)
