@@ -25,7 +25,7 @@
 
   --fs-body: var(--fs-400);
   --fs-heading: var(--fs-600);
-  --fs-button: var(--fs--200);
+  --fs-button: var(--fs-200);
 
 }
 
@@ -45,53 +45,63 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position:relative;
+  text-align: center;
   background-image: url('images/bg-mobile.svg');
   background-repeat: no-repeat;
-  background-size: 100vw auto;
+  background-size: 100% auto;
+  background-color: var(--clr-primary-100);
   font-family: var(--ff-body);
   font-size: var(--fs-body);
-  background-color: var(--clr-primary-100);
   color: var(--clr-neutral-100);
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 90rem) {
   body {
     background-image: url('images/bg-desktop.svg');
   }
 }
 
-picture {
-  width: 100vw;
-  height: auto;
-  position:absolute;
-  z-index: -1;
-}
-
-picture.img {
-  width: auto;
-}
-
 header {
-  width: 375px;
-  height: 24.75rem;
+  width: 18.5rem;
   margin-inline: auto;
 }
 
-.header-inside-wrapper {
-
+@media (max-width: 20rem) {
+  header {
+    margin-inline: 1.5rem;
+  }
 }
 
 .logo {
-  width: 10rem;
+  width: 100%;
   height: 6.25rem;
   background-image: url('images/logo.svg');
   background-repeat: no-repeat;
   background-size: 7.8125rem 5rem;
-  margin-bottom: 1.25rem;
+  margin-block: 0.5rem 1.25rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 18.5rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+@media (max-width: 20rem) {
+  main {
+    margin-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  main {
+    max-width:max-content;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3.6875rem;
+  }
 }
 
 .illustration-mockups {
@@ -100,25 +110,35 @@ header {
   background-image: url('images/illustration-mockups.svg');
   background-repeat: no-repeat;
   background-size: 18.5rem 13rem;
+  margin-bottom: 3.75rem;
 }
 
-main {
-  max-width: 17rem;
-  margin-inline: 2.25rem;
-  text-align: center;
+@media (min-width: 90rem) {
+  .illustration-mockups {
+    width: 43.5rem;
+    height: 30.8125rem;
+    background-size: 42.5rem auto;
+  }
+}
+
+@media (min-width: 90rem) {
+  .registration {
+    width: 32.5rem;
+  }
 }
 
 h1 {
   font-family: var(--ff-heading);
   font-size: var(--fs-heading);
   font-weight: var(--fw-600);
-  line-height: 2.25rem;
+  line-height: 2.5rem;
   margin-bottom: 1rem;
 }
 
 p {
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
+  margin-inline: -0.1rem;
 }
 
 .btn {
