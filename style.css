@@ -45,45 +45,66 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+  background-image: url('images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
   font-family: var(--ff-body);
   font-size: var(--fs-body);
   background-color: var(--clr-primary-100);
   color: var(--clr-neutral-100);
 }
 
+@media (min-width: 50rem) {
+  body {
+    background-image: url('images/bg-desktop.svg');
+  }
+}
+
+picture {
+  width: 100vw;
+  height: auto;
+  position:absolute;
+  z-index: -1;
+}
+
+picture.img {
+  width: auto;
+}
+
 header {
-  /* display: flex;
-  flex-direction: column; */
   width: 375px;
-  height: 396px;
-  background-image: url('images/bg-mobile.svg');
-  background-repeat: no-repeat;
-  background-size: 375px 360px;
+  height: 24.75rem;
+  margin-inline: auto;
 }
 
 .header-inside-wrapper {
-  margin-inline: 40px;
+
 }
 
 .logo {
-  width: 375px;
-  height: 100px;
+  width: 10rem;
+  height: 6.25rem;
   background-image: url('images/logo.svg');
   background-repeat: no-repeat;
-  background-size: 125px 80px;
-  margin-bottom: 20px;
+  background-size: 7.8125rem 5rem;
+  margin-bottom: 1.25rem;
 }
 
 .illustration-mockups {
-  width: 296px;
-  height: 209px;
+  width: 18.5rem;
+  height: 13rem;
   background-image: url('images/illustration-mockups.svg');
   background-repeat: no-repeat;
-  background-size: 296px 209px;
+  background-size: 18.5rem 13rem;
 }
 
 main {
-  margin-inline: 36px;
+  max-width: 17rem;
+  margin-inline: 2.25rem;
   text-align: center;
 }
 
@@ -91,20 +112,20 @@ h1 {
   font-family: var(--ff-heading);
   font-size: var(--fs-heading);
   font-weight: var(--fw-600);
-  line-height: 36px;
-  margin-bottom: 16px;
+  line-height: 2.25rem;
+  margin-bottom: 1rem;
 }
 
 p {
-  line-height: 24px;
-  margin-bottom: 24px;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
-  width: 200px;
-  height: 40px;
-  border-radius: 20px;
-  line-height: 40px;
+  width: 12.5rem;
+  height: 2.5rem;
+  border-radius: 1.75rem;
+  line-height: 2.5rem;
   font-size: var(--fs-button);
   color: var(--clr-primary-100);
   background-color: var(--clr-neutral-100);
@@ -113,18 +134,18 @@ p {
 }
 
 footer {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .social-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: .625rem;
 }
 
 .social-icon {
-  width: 28px;
+  width: 1.75rem;
   aspect-ratio: 1;
   fill: var(--clr-neutral-100)
 }
